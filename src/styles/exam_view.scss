@@ -1,0 +1,139 @@
+.layout-container {
+    display: flex;
+    height: 100vh;
+
+    h1 {
+        margin: 32px 0 12px 0;
+        font-size: 24px;
+    }
+    h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 48px;
+    }
+    h4 {
+        font-size: 16px;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+
+    .randomly-picked-questions {
+        background-color: #F2F9FF;
+        padding: 12px 0;
+        padding-bottom: 24px;
+        border-left: 2px solid #2482cf;
+        transform: translateX(-2px);
+        .reroll {
+            display: flex;
+            padding-left: 40px;
+            align-items: center;
+        }
+
+        #reroll-btn {
+            background: #003056;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            // padding: 0;
+            padding: 6px 12px;
+            border: 0;
+            // border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .question-count-input {
+            background-color: rgba(black, 5%);
+            margin-left: 16px;
+            padding: 4px 12px;
+            margin-right: 6px;
+            border-radius: 4px;
+        }
+        .question-count-input span {
+        }
+        .question-count-input input {
+            border: 0;
+            outline: 0;
+            width: 20px;
+            margin: 0;
+            font-size: 16px;
+            text-align: right;
+            background-color: transparent;
+            -moz-appearance: textfield;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+
+    .radio-button-group .radio-option:has(input:checked) .radio-validation {
+        &[data-correct="true"] {
+            &::after {
+                content: " Tačno.";
+                color: green;
+            }
+        }
+    }
+    
+    .radio-validation {
+        &[data-correct="true"] {
+            &::after {
+                content: " Ispravno";
+                color: orangered;
+            }
+        }
+    }
+
+    .btn-validate {
+        margin: 12px 40px;
+        color: white;
+        background-color: #1c639e;
+        border: 1px solid rgba(black, 20%);
+        font-size: 16px;
+        font-weight: 600;
+        padding: 6px 12px;
+    }
+}
+
+ul, ol {
+    list-style-position: inside;
+    .question-container {
+        display: inline;
+    }
+    line-height: 150%;
+}
+ul {
+    list-style: none;
+    padding-left: 14px;
+    li {
+        margin-left: 0;
+    }
+}
+li {
+    font-size: 16px;
+}
+
+.questions-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    // background-color: #f7f7f7;
+    padding: 12px 0;
+    padding-bottom: 24px;
+    // border-left: 2px solid #686868;
+    transform: translateX(-2px);
+
+    .toggle-btn {
+        margin: 12px;
+        background-color: #eeeeee;
+        border: 1px solid rgba(black, 20%);
+        font-size: 14px;
+        // font-weight: 600;
+        padding: 4px 12px;
+    }
+}
+.questions-list[data-blured="true"] li {
+    filter: blur(4px);
+}

@@ -1,0 +1,40 @@
+{
+    "title": "Pitalice #1 - Elektrostatika",
+    "questions": [
+        {
+            "question": "Koja mjerna jedinica se koristi za jačinu struje?",
+            "answer_type": "SINGLE_CHOICE",
+
+            "choices": [
+                "Amper",
+                "Volt",
+                "Henri"
+            ],
+            "correct_choices": [ 0 ]
+        },
+        {
+            "question": "Koja mjerna jedinica se koristi za napon?",
+            "answer_type": "SINGLE_CHOICE",
+
+            "choices": [
+                "Amper",
+                "Volt",
+                "Henri"
+            ],
+            "correct_choices": [ 1 ]
+        },
+        {
+            "question": "Ko je Alanov najdraži cimer?",
+            "answer_type": "SINGLE_CHOICE",
+
+            "choices": [
+                "Ahmed",
+                "Ahmed",
+                "Ahmed"
+            ],
+            "correct_choices": [ 1 ]
+        }
+    ],
+    "default_random_questions_count": 10,
+    "answer_validation": true
+}

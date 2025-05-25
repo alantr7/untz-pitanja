@@ -1,0 +1,23 @@
+[
+    // Primjer za pitalice
+    {
+        "question": "Koja je oznaka za struju?",
+        "answer": {
+            "type": "choice",
+            "content": [
+                "Amper",
+                "Om",
+                "Volt"
+            ]
+        }
+    },
+
+    // Primjer za OR
+    {
+        "question": "Binarni brojevi",
+        "answer": {
+            "type": "exact",
+            "content": "Binarni brojevi su bla bla bla bla bla bla bla bla bla bla."
+        }
+    }
+]

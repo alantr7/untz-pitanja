@@ -1,0 +1,43 @@
+.group-manager {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 240px;
+    border: 1px solid #D7D7D7;
+    border-radius: 6px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    button {
+        width: 30px;
+        height: 30px;
+        margin-left: 4px;
+        border: 0;
+        border-radius: 4px;
+        background: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(black, 5%);
+        }
+    }
+    button[data-action="switch"] {
+        background-image: url(/icon-switch.png);
+    }
+    button[data-action="edit"] {
+        background-image: url(/icon-edit.png);
+    }
+}
+
+hr {
+    margin: 12px auto;
+}
+
+#current-group {
+    margin: 0;
+    flex-grow: 1;
+}
