@@ -1,115 +1,93 @@
 {
-    "mat1": {
-        "id": "mat1",
-        "name": "Matematika 1",
-        "category": "ZAJ",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit" }
-        ]
-    },
-    "mat2": {
-        "id": "mat2",
-        "name": "Matematika 2",
-        "category": "ZAJ",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit" }
-        ]
-    },
+  "mat1": {
+    "id": "mat1",
+    "name": "Matematika 1",
+    "category": "ZAJ",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }]
+  },
+  "mat2": {
+    "id": "mat2",
+    "name": "Matematika 2",
+    "category": "ZAJ",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }]
+  },
 
-    "fizika1": {
-        "id": "fizika1",
-        "name": "Fizika 1",
-        "category": "ZAJ",
-        "exams": [
-            { "id": "zavrsni_sa", "name": "Završni ispit - S.A." }
-        ]
-    },
-    "fizika2": {
-        "id": "fizika2",
-        "name": "Fizika 2",
-        "category": "ZAJ",
-        "exams": [
-            { "id": "zavrsni_ig", "name": "Završni ispit - S.A." }
-        ]
-    },
-    "oe1": {
-        "id": "oe1",
-        "name": "Osnovi Elektrotehnike 1",
-        "category": "ESKE",
-        "exams": [
-            { "id": "pitalice1", "name": "Pitalice - Elektrostatika" },
-            { "id": "pitalice2", "name": "Pitalice - Jednosmj. Struje" }
-        ]
-    },
-    "oe2": {
-        "id": "oe2",
-        "name": "Osnovi Elektrotehnike 2",
-        "category": "ESKE",
-        "exams": [
-            { "id": "zavrsni_magnetizam", "name": "Završni ispit - Magnetizam" }
-        ]
-    },
-    "ues": {
-        "id": "ues",
-        "name": "Uvod u energetske sisteme",
-        "category": "EEMS",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit - Edgy Nedzi" }
-        ]
-    },
+  "fizika1": {
+    "id": "fizika1",
+    "name": "Fizika 1",
+    "category": "ZAJ",
+    "exams": [{ "id": "zavrsni_sa", "name": "Završni ispit - S.A." }]
+  },
+  "fizika2": {
+    "id": "fizika2",
+    "name": "Fizika 2",
+    "category": "ZAJ",
+    "exams": [{ "id": "zavrsni_ig", "name": "Završni ispit - S.A." }]
+  },
+  "oe1": {
+    "id": "oe1",
+    "name": "Osnovi Elektrotehnike 1",
+    "category": "ESKE",
+    "exams": [
+      { "id": "pitalice1", "name": "Pitalice - Elektrostatika" },
+      { "id": "pitalice2", "name": "Pitalice - Jednosmj. Struje" }
+    ]
+  },
+  "oe2": {
+    "id": "oe2",
+    "name": "Osnovi Elektrotehnike 2",
+    "category": "ESKE",
+    "exams": [
+      { "id": "zavrsni_magnetizam", "name": "Završni ispit - Magnetizam" }
+    ]
+  },
+  "ues": {
+    "id": "ues",
+    "name": "Uvod u energetske sisteme",
+    "category": "EEMS",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit - Edgy Nedzi" }]
+  },
 
-    "or": {
-        "id": "or",
-        "name": "Osnovi Računarstva",
-        "category": "RI",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit" }
-        ]
-    },
+  "or": {
+    "id": "or",
+    "name": "Osnovi Računarstva",
+    "category": "RI",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }]
+  },
 
-    "op": {
-        "id": "op",
-        "name": "Osnovi Programiranja",
-        "category": "RI",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit" }
-        ]
-    },
+  "op": {
+    "id": "op",
+    "name": "Osnovi Programiranja",
+    "category": "RI",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }]
+  },
 
-    "tptp": {
-        "id": "tptp",
-        "name": "Teh. za podršku teh. pisanju",
-        "category": "TK",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit - HTML" }
-        ]
-    },
+  "tptp": {
+    "id": "tptp",
+    "name": "Teh. za podršku teh. pisanju",
+    "category": "TK",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit - HTML" }]
+  },
 
-
-
-
-    "tek": {
-        "id": "tek",
-        "name": "Teorija Električnih Kola",
-        "category": "EEMS",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit - HTML" }
-        ]
-    },
-    "tep": {
-        "id": "tep",
-        "name": "Teorija Elektromagnetnih Polja",
-        "category": "EEMS",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit - HTML" }
-        ]
-    },
-    "em": {
-        "id": "em",
-        "name": "Električna mjerenja",
-        "category": "EEMS",
-        "exams": [
-            { "id": "zavrsni", "name": "Završni ispit - HTML" }
-        ]
-    }
+  "tek": {
+    "id": "tek",
+    "name": "Teorija električnih kola",
+    "category": "EEMS",
+    "exams": [
+      { "id": "test1", "name": "Test 1" },
+      { "id": "zavrsni", "name": "Završni ispit" }
+    ]
+  },
+  "tep": {
+    "id": "tep",
+    "name": "Teorija Elektromagnetnih Polja",
+    "category": "EEMS",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit - HTML" }]
+  },
+  "em": {
+    "id": "em",
+    "name": "Električna mjerenja",
+    "category": "EEMS",
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit - HTML" }]
+  }
 }

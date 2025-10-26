@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 body {
     margin: 0;
@@ -14,7 +14,7 @@ body {
     }
 }
 
-* {
+div, a, button, p {
     font-family: Inter;
 }
 
@@ -30,25 +30,37 @@ main {
     font-size: 18px;
 }
 
-h1, h3 {
+h1,
+h3 {
     text-align: center;
 }
 
 .sidebar {
     width: 314px;
     padding-top: 16px;
-    border-right: 1px solid #E0E0E0;
+    border-right: 1px solid #e0e0e0;
     // background-color: #F2F9FF;
     overflow: hidden auto;
+
+    .group-manager {
+        margin: 0 auto;
+    }
 
     .item-group {
         display: block;
         margin: 0 auto;
         width: 280px;
-        padding: 7px 12px;
+        padding: 2px 12px;
         margin: 0 16px;
         position: relative;
-        background: linear-gradient(0% white, 20% white, 20% black, 30% black, 30% white, 100% white);
+        background: linear-gradient(
+            0% white,
+            20% white,
+            20% black,
+            30% black,
+            30% white,
+            100% white
+        );
 
         .group-button {
             background: none;
@@ -62,7 +74,7 @@ h1, h3 {
                 content: attr(data-category);
                 font-size: 10px;
                 color: cornflowerblue;
-                background-color: #F2F9FF;
+                background-color: #f2f9ff;
                 font-weight: 800;
                 border-radius: 4px;
                 padding: 2px;
@@ -81,10 +93,10 @@ h1, h3 {
             z-index: -1;
         }
 
-        &[data-expanded=true] .tree-branch {
+        &[data-expanded="true"] .tree-branch {
             visibility: visible;
         }
-        
+
         .exam-container {
             margin: 4px 0 0 0;
             padding-left: 0;
@@ -93,7 +105,7 @@ h1, h3 {
         .exam-button {
             font-size: 15px;
             border: 0;
-            padding: 6px 12px;
+            padding: 2px 12px;
             padding-left: 32px;
             margin: 1px 6px;
             width: 248px;
@@ -113,15 +125,15 @@ h1, h3 {
                 width: 6px;
                 height: 6px;
                 border-radius: 50%;
-                content: ' ';
+                content: " ";
             }
 
             &:hover {
                 // background-color: #f7f7f7;
             }
-            
+
             &.active {
-                background-color: #F2F9FF;
+                background-color: #f2f9ff;
                 // color: rgb(34, 84, 131);
                 color: black;
                 font-weight: 400;

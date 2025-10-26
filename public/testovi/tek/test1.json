@@ -1,0 +1,36 @@
+{
+    "title": "Test #1",
+    "questions": [
+        {
+            "question": "Zbirka - Zadatak 6.1.\nU kolu na slici 6.1 se trenutno u trenutku t=0 zatvara prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=2 V$, $R=1 \\Omega$, $L=0.1 mH$, $C=100 \\mu F$.",
+            "answer_type": "SOLUTION",
+            "answer": "$i_L\\left(t\\right)=1+e^{-10000t}\\sin 10000t\\ A$, $t\\ge 0$",
+
+            "layout": "70_QUESTION_30_GRAPHICS",
+            "graphics": [
+                "/slike/tek/6.1.png"
+            ]
+        },
+        {
+            "question": "Zbirka - Zadatak 6.2.\nKolo na slici 6.2 je u stacionarnom radnom režimu. U trenutku t=0 zatvara se prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=10\\ V$, $R=10\\ \\Omega$, $L=10\\ mH$, $C=100\\ \\mu F$, $U_{C0}=10\\ V$ (prema referentnom smijeru kao na slici 6.2).",
+            "answer_type": "SOLUTION",
+            "answer": "$i_L\\left(t\\right)=0.25-1750te^{-2000t}\\ A$, $t\\ge 0$",
+
+            "layout": "70_QUESTION_30_GRAPHICS",
+            "graphics": [
+                "/slike/tek/6.2.png"
+            ]
+        },
+        {
+            "question": "Zbirka - Zadatak 6.3.\nKolo na slici 6.3 je u stacionarnom radnom režimu. U trenutku t=0 otvara se prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=22\\ V$, $R=10\\ \\Omega$, $L=10\\ H$, $C=0.1\\ F$.",
+            "answer_type": "NO_ANSWER",
+
+            "layout": "70_QUESTION_30_GRAPHICS",
+            "graphics": [
+                "/slike/tek/6.2.png"
+            ]
+        }
+    ],
+    "default_random_questions_count": 10,
+    "answer_validation": true
+}

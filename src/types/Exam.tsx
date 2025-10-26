@@ -16,6 +16,10 @@ export type ExamQuestion = {
 
     // If answer type is: PARAGRAPH
     answer?: string,
+
+    layout?: ExamQuestionLayout,
+    graphics?: string[],
 }
 
-export type ExamQuestionAnswerType = "SINGLE_CHOICE" | "MULTIPLE_CHOICE" | "NO_ANSWER" | "PARAGRAPH";
+export type ExamQuestionAnswerType = "SINGLE_CHOICE" | "MULTIPLE_CHOICE" | "NO_ANSWER" | "PARAGRAPH" | "SOLUTION";
+export type ExamQuestionLayout = "70_QUESTION_30_GRAPHICS";
