@@ -2,7 +2,7 @@
     "title": "Test #1",
     "questions": [
         {
-            "question": "Zbirka - Zadatak 6.1.\nU kolu na slici 6.1 se trenutno u trenutku t=0 zatvara prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=2 V$, $R=1 \\Omega$, $L=0.1 mH$, $C=100 \\mu F$.",
+            "question": "<b>Zbirka - Zadatak 6.1.</b>\nU kolu na slici 6.1 se trenutno u trenutku t=0 zatvara prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=2 V$, $R=1 \\Omega$, $L=0.1 mH$, $C=100 \\mu F$.",
             "answer_type": "SOLUTION",
             "answer": "$i_L\\left(t\\right)=1+e^{-10000t}\\sin 10000t\\ A$, $t\\ge 0$",
 
@@ -12,7 +12,7 @@
             ]
         },
         {
-            "question": "Zbirka - Zadatak 6.2.\nKolo na slici 6.2 je u stacionarnom radnom režimu. U trenutku t=0 zatvara se prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=10\\ V$, $R=10\\ \\Omega$, $L=10\\ mH$, $C=100\\ \\mu F$, $U_{C0}=10\\ V$ (prema referentnom smijeru kao na slici 6.2).",
+            "question": "<b>Zbirka - Zadatak 6.2.</b>\nKolo na slici 6.2 je u stacionarnom radnom režimu. U trenutku t=0 zatvara se prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=10\\ V$, $R=10\\ \\Omega$, $L=10\\ mH$, $C=100\\ \\mu F$, $U_{C0}=10\\ V$ (prema referentnom smijeru kao na slici 6.2).",
             "answer_type": "SOLUTION",
             "answer": "$i_L\\left(t\\right)=0.25-1750te^{-2000t}\\ A$, $t\\ge 0$",
 
@@ -22,12 +22,33 @@
             ]
         },
         {
-            "question": "Zbirka - Zadatak 6.3.\nKolo na slici 6.3 je u stacionarnom radnom režimu. U trenutku t=0 otvara se prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=22\\ V$, $R=10\\ \\Omega$, $L=10\\ H$, $C=0.1\\ F$.",
-            "answer_type": "NO_ANSWER",
+            "question": "<b>Zbirka - Zadatak 6.3.</b>\nKolo na slici 6.3 je u stacionarnom radnom režimu. U trenutku t=0 otvara se prekidač. Odrediti vremensku funkciju $i_L$(t) za promjenu struje kroz induktivitet poslije komutacije.\nPodaci: $E=22\\ V$, $R=10\\ \\Omega$, $L=10\\ H$, $C=0.1\\ F$.",
+            "answer_type": "SOLUTION",
+            "answer": "$i_L\\left(t\\right)=0.55-\\left(0.15-0.1t\\right)e^{-2t}\\ A$, $t\\ge 0$",
 
             "layout": "70_QUESTION_30_GRAPHICS",
             "graphics": [
-                "/slike/tek/6.2.png"
+                "/slike/tek/6.3.png"
+            ]
+        },
+        {
+            "question": "<b>Zbirka - Zadatak 6.4.</b>\nU kolu na slici 6.4 trenutno se u trenutku t=0 otvara prekidač.\na) Klasičnom metodom odrediti struju kroz induktivitet $i_L$(t) poslije otvaranja prekidača.\nb) Odrediti vremensku funkciju $u_C$(t) promjene napona na krajevima kondenzatora.\nPodaci: $E=6\\ V$, $R=10\\ \\Omega$, $L=10\\ H$, $C=0.1\\ F$.",
+            "answer_type": "SOLUTION",
+            "answer": "a) $i_L\\left(t\\right)=0.2e^{-t}\\left(\\sin t-\\cos t\\right)$, $t\\ge 0$\nb) $u_C\\left(t\\right)=6-2e^{-t}\\left(\\cos t+\\sin t\\right)$, $t\\ge 0$",
+
+            "layout": "70_QUESTION_30_GRAPHICS",
+            "graphics": [
+                "/slike/tek/6.4.png"
+            ]
+        },
+        {
+            "question": "<b>Zbirka - Zadatak 6.5.</b>\nU kolu na slici 6.5 u trenutku t=0 se isključuje prekidač P.\na) Odrediti vremensku funkciju $u_C$(t) za napon na kondenzatoru poslije komutacije.\nb) Za koje vrijednosti otpornosti otpora R u kolu nastaje prelazni proces oscilatornog karaktera?\nPodaci: $E=12\\ V$, $R=10\\ \\Omega$, $L=10\\ H$, $C=0.1\\ F$.",
+            "answer_type": "SOLUTION",
+            "answer": "a) $u_C\\left(t\\right)=12-3e^{-2t}\\ V$, $t\\ge 0$\nb) $\\frac{1}{3} \\sqrt{\\frac{L}{C}} < R < \\sqrt{\\frac{L}{C}}$",
+
+            "layout": "70_QUESTION_30_GRAPHICS",
+            "graphics": [
+                "/slike/tek/6.5.png"
             ]
         }
     ],
