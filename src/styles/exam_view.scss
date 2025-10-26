@@ -61,13 +61,14 @@ ul, ol {
         }
     }
     .solution {
-        padding: 2px 8px;
+        padding: 2px 12px;
         background-color: rgb(240, 240, 240);
         border: 1px solid black;
         display: inline-block;
         margin-top: 8px;
-        font-size: 18px !important;
-        text-align: center;
+        math {
+            font-size: 18px !important;
+        }
     }
     line-height: 150%;
 }
@@ -210,7 +211,7 @@ li {
 
 }
 li:has(.question-container .solution) {
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 }
 .questions-list[data-blured="true"] li {
     filter: blur(4px);

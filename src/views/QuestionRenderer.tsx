@@ -29,7 +29,7 @@ export function QuestionRenderer(props: QuestionRendererProps) {
         if (solutionRef.current) {
             solutionRef.current.innerHTML = renderFencedMath(question.answer as string);
         }
-    }, [solutionRef.current]);
+    }, [solutionRef.current, question]);
 
     const handleChange = useCallback((idx: number) => {
         setChecked(prev => {

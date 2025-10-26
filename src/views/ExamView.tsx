@@ -147,9 +147,6 @@ export function ExamView() {
 
           <section className="questions-list">
             <ol>
-              <h4>
-                Lista pitanja{" "}
-              </h4>
               {exam?.questions?.map((question, idx) => (
                 <li key={generationId + "_" + idx}>
                   <QuestionRenderer
