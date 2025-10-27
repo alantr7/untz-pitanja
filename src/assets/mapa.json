@@ -3,26 +3,30 @@
     "id": "mat1",
     "name": "Matematika 1",
     "category": "ZAJ",
-    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }]
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }],
+    "tags": ["Završni"]
   },
   "mat2": {
     "id": "mat2",
     "name": "Matematika 2",
     "category": "ZAJ",
-    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }]
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }],
+    "tags": ["Završni"]
   },
 
   "fizika1": {
     "id": "fizika1",
     "name": "Fizika 1",
     "category": "ZAJ",
-    "exams": [{ "id": "zavrsni_sa", "name": "Završni ispit - S.A." }]
+    "exams": [{ "id": "zavrsni_sa", "name": "Završni ispit - S.A." }],
+    "tags": ["Završni"]
   },
   "fizika2": {
     "id": "fizika2",
     "name": "Fizika 2",
     "category": "ZAJ",
-    "exams": [{ "id": "zavrsni_ig", "name": "Završni ispit - S.A." }]
+    "exams": [{ "id": "zavrsni_ig", "name": "Završni ispit - S.A." }],
+    "tags": ["Završni"]
   },
   "oe1": {
     "id": "oe1",
@@ -31,7 +35,8 @@
     "exams": [
       { "id": "pitalice1", "name": "Pitalice - Elektrostatika" },
       { "id": "pitalice2", "name": "Pitalice - Jednosmj. Struje" }
-    ]
+    ],
+    "tags": ["Završni", "Test 1", "Test 2", "Pitalice"]
   },
   "oe2": {
     "id": "oe2",
@@ -45,7 +50,7 @@
     "id": "ues",
     "name": "Uvod u energetske sisteme",
     "category": "EEMS",
-    "exams": [{ "id": "zavrsni", "name": "Završni ispit - Edgy Nedzi" }]
+    "exams": [{ "id": "zavrsni", "name": "Završni ispit" }]
   },
 
   "or": {
@@ -76,7 +81,8 @@
     "exams": [
       { "id": "test1", "name": "Test 1" },
       { "id": "zavrsni", "name": "Završni ispit" }
-    ]
+    ],
+    "tags": ["Završni", "Test 1"]
   },
   "tep": {
     "id": "tep",

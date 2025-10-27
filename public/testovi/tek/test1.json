@@ -52,6 +52,7 @@
             ]
         }
     ],
+    "is_simulatable": true,
     "default_random_questions_count": 10,
     "answer_validation": true
 }

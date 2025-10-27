@@ -20,6 +20,7 @@ export function ExamView() {
   const [randomQuestionsCount, setRandomQuestionsCount] = useState(0);
   const [isValidating, setIsValidating] = useState(false);
   const [isSimulating, setIsSimulating] = useState(false);
+  const [isSidebarFullscreen, setIsSidebarFullscreen] = useState(false);
 
   // If there is no group loaded, redirect to group editor
   if (Database.getGroup().classes.length === 0) {
@@ -69,6 +70,7 @@ export function ExamView() {
 
   // Load new questions and cancel previous fetch if active
   useEffect(() => {
+    setIsSidebarFullscreen(false);
     const abortController = new AbortController();
     axios
       .get(`/testovi/${class_id}/${test_id}.json`, {
@@ -85,12 +87,26 @@ export function ExamView() {
   }, [class_id, test_id]);
 
   return (
-    <div className="layout-container">
+    <div className={"layout-container " + (isSidebarFullscreen ? "fullscreen-sidebar" : "")}>
       <Sidebar />
       <div className="main-container">
         {(class_id === undefined || exam === undefined) && (
           <h3 style={{ marginTop: "32px" }}>Molimo izaberite test</h3>
         )}
+        <div className="header">
+          <div className="header-content">
+            <button className="sidebar-hamburger" onClick={() => setIsSidebarFullscreen(true)}>|||</button>
+            <h1>{untzClass?.name}</h1>
+            <h4>Fakultet elektrotehnike</h4>
+
+            <nav>
+              {untzClass?.exams.map(exam => <a href={`/#/testovi/${class_id}/${exam.id}`}><button key={exam.id} data-active={test_id === exam.id}>
+                {exam.name}
+              </button></a>)}
+            </nav>
+          </div>
+        </div>
+
         <main
           style={{
             visibility:
@@ -99,10 +115,7 @@ export function ExamView() {
                 : "visible",
           }}
         >
-          <h1>{untzClass?.name}</h1>
-          <h3>{exam?.title}</h3>
-
-          <button id="simulate-exam-btn" onClick={() => (setIsSimulating(true), setGenerationId(Date.now()), setIsValidating(false))}>Simuliraj</button>
+          {exam?.is_simulatable && <button id="simulate-exam-btn" onClick={() => (setIsSimulating(true), setGenerationId(Date.now()), setIsValidating(false))}>Simuliraj</button>}
           <ExamSimulationModal isOpen={isSimulating} onRequestClose={() => setIsSimulating(false)}>
           <section className="randomly-picked-questions">
             <h4>Simulacija testa{'/'}ispita</h4>

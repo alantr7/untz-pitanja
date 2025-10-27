@@ -34,34 +34,22 @@ function SidebarItemGroup(props: {
   test_id: string;
   untzClass: UntzClass;
 }) {
-  const [isExpanded, setExpanded] = useState(false);
   return (
     <div
       className={`item-group ${props.class_id === props.untzClass.id ? "active" : ""}`}
-      data-expanded={isExpanded}
     >
       <div className="tree-branch"></div>
-      <button
+      <a href={`/#/testovi/${props.untzClass.id}/${props.untzClass.exams[0].id}`}><button
         className="group-button"
-        onClick={() => setExpanded(!isExpanded)}
         data-category={props.untzClass.category}
       >
-        {props.untzClass.name}
-      </button>
-      <ul className="exam-container">
-        {isExpanded &&
-          props.untzClass.exams.map((exam, idx) => (
-            <li key={idx}>
-              <a href={`/#/testovi/${props.untzClass.id}/${exam.id}`}>
-                <button
-                  className={`exam-button ${props.test_id === exam.id && props.untzClass.id === props.class_id ? "active" : ""}`}
-                >
-                  &nbsp;&nbsp;{exam.name}
-                </button>
-              </a>
-            </li>
-          ))}
-      </ul>
+        <div>
+          {props.untzClass.name}< br />
+          <div className="tags">
+            {props.untzClass.tags?.map(ex => <span key={ex}>{ex}</span>)}
+          </div>
+        </div>
+      </button></a>
     </div>
   );
 }

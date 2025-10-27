@@ -22,19 +22,9 @@
                 "Henri"
             ],
             "correct_choices": [ 1 ]
-        },
-        {
-            "question": "Ko je Alanov najdraži cimer?",
-            "answer_type": "SINGLE_CHOICE",
-
-            "choices": [
-                "Ahmed",
-                "Ahmed",
-                "Ahmed"
-            ],
-            "correct_choices": [ 1 ]
         }
     ],
+    "is_simulatable": true,
     "default_random_questions_count": 10,
     "answer_validation": true
 }

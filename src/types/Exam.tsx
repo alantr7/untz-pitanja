@@ -2,6 +2,7 @@ export type Exam = {
     title: string,
     questions: ExamQuestion[],
 
+    is_simulatable?: boolean,
     default_random_questions_count: number,
     answer_validation?: boolean
 }
