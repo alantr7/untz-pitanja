@@ -243,11 +243,13 @@ li {
 .questions-list {
     margin-top: 0px;
     margin-bottom: 24px;
-    // background-color: #f7f7f7;
     padding: 12px 0;
     padding-bottom: 24px;
-    // border-left: 2px solid #686868;
     transform: translateX(-2px);
+
+    ol li {
+        margin-right: 32px;
+    }
 
     .toggle-btn {
         margin: 12px;
