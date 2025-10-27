@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { UntzClass } from "./types/UntzClass";
-import { useState } from "react";
 import { ClassesManager } from "./ClassesManager";
 import { Database } from "./utils/Database";
 import untzClasses from "./assets/mapa.json";
